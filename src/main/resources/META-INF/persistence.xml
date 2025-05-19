@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+    <persistence-unit name="libraryPU" transaction-type="RESOURCE_LOCAL">
+        <class>org.example.model.User</class>
+        <class>org.example.model.Book</class>
+        <class>org.example.model.Borrowing</class>
+        <class>org.example.model.Copy</class>
+        <class>org.example.model.Librarian</class>
+        <class>org.example.model.Publisher</class>
+
+        <properties>
+
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/library_db"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="password"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
