@@ -1,4 +1,3 @@
-package org.example.tests;
 
 import org.example.model.Book;
 import org.example.model.User;
@@ -6,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import javax.persistence.EntityManager;
 import javax.validation.*;
 import java.util.Set;
 
@@ -15,24 +15,15 @@ public class ValidationTests {
 
     private static Validator validator;
 
-    /**
-     * Build the Validator instance once before all tests.
-     * This loads the Bean Validation framework (e.g. Hibernate Validator).
-     */
     @BeforeAll
     static void setUpValidator() {
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         validator = factory.getValidator();
     }
 
-    // ------------------------
-    // Testing Book.isbn
-    // ------------------------
-
     @Test
     @DisplayName("Valid ISBN passes validation")
     void testValidIsbn() {
-        // Suppose your ISBN validation requires a 10 or 13 digit string:
         Book validBook = new Book(
                 "Valid Title",
                 "Some Author",
@@ -47,23 +38,19 @@ public class ValidationTests {
     @Test
     @DisplayName("Invalid ISBN fails validation")
     void testInvalidIsbn() {
-        // e.g., too short or contains letters in places
         Book invalidBook = new Book(
                 "Title",
                 "Author",
                 "Publisher",
                 2022,
-                "ABCD-1234" // obviously invalid
+                "ABCD-1234"
         );
         Set<ConstraintViolation<Book>> violations = validator.validate(invalidBook);
         assertFalse(violations.isEmpty(), "Expected violation for an invalid ISBN format");
 
-        // Optionally, you can check the exact message or property path:
         ConstraintViolation<Book> violation = violations.iterator().next();
         assertEquals("isbn", violation.getPropertyPath().toString(),
                 "Violation should be on the 'isbn' field");
-        // or check the message if your custom annotation has a default message
-        // assertEquals("Invalid ISBN format", violation.getMessage());
     }
 
     @Test
@@ -74,15 +61,12 @@ public class ValidationTests {
                 "Author",
                 "Publisher",
                 2022,
-                null // null
+                null
         );
         Set<ConstraintViolation<Book>> violations = validator.validate(nullIsbnBook);
         assertFalse(violations.isEmpty(), "Should fail because ISBN is null");
     }
 
-    // ------------------------
-    // Testing User.email
-    // ------------------------
 
     @Test
     @DisplayName("Valid email passes validation")
@@ -113,10 +97,8 @@ public class ValidationTests {
         Set<ConstraintViolation<User>> violations = validator.validate(invalidUser);
         assertFalse(violations.isEmpty(), "Expected violation for invalid email format");
 
-        // Further checks if desired:
         ConstraintViolation<User> violation = violations.iterator().next();
         assertEquals("email", violation.getPropertyPath().toString());
-        // assertEquals("Invalid email format", violation.getMessage());
     }
 
     @Test
@@ -124,7 +106,7 @@ public class ValidationTests {
     void testNullEmail() {
         User user = new User(
                 "Charlie",
-                null, // null email
+                null,
                 "555-9999",
                 "789 Boulevard",
                 "pwd",
@@ -133,5 +115,6 @@ public class ValidationTests {
         Set<ConstraintViolation<User>> violations = validator.validate(user);
         assertFalse(violations.isEmpty(), "Expected violation for null email");
     }
+
 
 }

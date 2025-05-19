@@ -1,4 +1,3 @@
-package org.example.tests;
 
 import org.example.model.Book;
 import org.example.model.Copy;
@@ -28,10 +27,8 @@ public class ConcurrencyBorrowingTests {
 
     @BeforeAll
     void setUpAll() {
-        // Create the EntityManagerFactory for "testPU" or your chosen test persistence unit
         emf = Persistence.createEntityManagerFactory("testPU");
 
-        // Initialize your services with that same PU
         bookService = new BookService("testPU");
         copyService = new CopyService("testPU");
         userService = new UserService("testPU");
@@ -43,7 +40,6 @@ public class ConcurrencyBorrowingTests {
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
 
-        // Truncate tables in a safe FK order
         em.createQuery("DELETE FROM Borrowing").executeUpdate();
         em.createQuery("DELETE FROM Copy").executeUpdate();
         em.createQuery("DELETE FROM Book").executeUpdate();
@@ -62,7 +58,6 @@ public class ConcurrencyBorrowingTests {
 
     @Test
     void testConcurrentBorrowingOnSameCopy() throws InterruptedException {
-        // 1) Create a Book, Copy, and User
         bookService.createBook("Concurrency Book", "Some Author", "Publisher", 2023, "9781234567897");
         Book book = bookService.getAllBooks().get(0);
 
@@ -72,18 +67,15 @@ public class ConcurrencyBorrowingTests {
         userService.createUser("ConcurrentUser", "concurrent@example.com", "555-0000", "Concurrent St", "pass123", "USER");
         User user = userService.getAllUsers().get(0);
 
-        // 2) Define a task that attempts to borrow the same Copy
         Runnable borrowTask = () -> {
             try {
-                // This calls borrowingService to create a Borrowing
-                // which should set copy status to "Borrowed" if successful
                 borrowingService.createBorrowing(user.getId(), copy.getId(), new Date(), null);
             } catch (Exception e) {
-                // If concurrency is enforced, the second attempt might fail or do nothing
+
             }
         };
 
-        // 3) Launch two threads that attempt the same borrow
+
         Thread t1 = new Thread(borrowTask, "BorrowThread-1");
         Thread t2 = new Thread(borrowTask, "BorrowThread-2");
 
@@ -93,13 +85,10 @@ public class ConcurrencyBorrowingTests {
         t1.join();
         t2.join();
 
-        // 4) Now verify that only one borrow actually succeeded
-        //    i.e., there should be exactly one Borrowing record
         List<?> allBorrowings = borrowingService.getAllBorrowings();
         assertEquals(1, allBorrowings.size(),
                 "Only one Borrowing should exist if concurrency is handled properly");
 
-        // 5) Check the final Copy status
         Copy updatedCopy = copyService.getAllCopies().get(0);
         assertEquals("Borrowed", updatedCopy.getStatus(),
                 "Copy should be 'Borrowed' after one successful borrowing attempt");

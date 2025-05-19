@@ -5,35 +5,267 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aac85528-b1fa-4071-9cb2-6f177753aff0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/AddEditBookDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/AddEditBookDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/AddEditBorrowingDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/AddEditBorrowingDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/AddEditLibrarianDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/AddEditLibrarianDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/AddEditPublisherDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/AddEditPublisherDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/AddEditUserDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/AddEditUserDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/BookPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/BookPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/BorrowingHistoryPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/BorrowingHistoryPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/BorrowingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/BorrowingPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/LibrarianPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/LibrarianPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/PublisherPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/PublisherPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/UserPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/UserPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/ViewAllTitlesPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/ViewAllTitlesPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/gui/ViewAvailableTitlesPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/gui/ViewAvailableTitlesPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Borrowing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Borrowing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Copy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Copy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Librarian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Publisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/BorrowingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/BorrowingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/CopyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CopyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/LibrarianService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/LibrarianService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/PublisherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/PublisherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/session/SessionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/session/SessionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/validation/EmailValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/validation/EmailValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/validation/IsbnValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/validation/IsbnValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/validation/ValidEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/validation/ValidEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/validation/ValidIsbn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/validation/ValidIsbn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BookTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BorrowingBusinessLogicTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BorrowingBusinessLogicTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BorrowingTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BorrowingTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ConcurrencyBorrowingTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ConcurrencyBorrowingTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CopiesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CopiesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DeleteReferencedRecordsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DeleteReferencedRecordsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LibrarianTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LibrarianTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/NullOrEmptyFieldsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NullOrEmptyFieldsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PublisherTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PublisherTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RelationshipTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RelationshipTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ValidationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ValidationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MarcoZetina"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Marrrco7/Library-Management-System.git",
+    "accountId": "249e17ba-2dc7-44fb-9b05-402e0110c05a"
+  }
+}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
+    {
+      &quot;name&quot;: &quot;kind-challenge&quot;
+    }
+  ],
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="kind-challenge" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2rd7vC4ovVmqWyglrywHAPKkEu5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.DatabaseTest.executor": "Run",
+    "Application.GUI.executor": "Run",
+    "Application.LoginForm.executor": "Run",
+    "Application.LoginWindow.executor": "Run",
+    "Application.MainWindow.executor": "Run",
+    "JUnit.BookTests.executor": "Run",
+    "JUnit.BookTests.testDeleteBookReferencedByCopiesFails.executor": "Run",
+    "JUnit.BorrowingBusinessLogicTests.executor": "Run",
+    "JUnit.BorrowingTests (1).executor": "Run",
+    "JUnit.BorrowingTests.executor": "Run",
+    "JUnit.BorrowingTests.testReadBorrowing.executor": "Run",
+    "JUnit.BorrowingTests.testReadBorrowings.executor": "Run",
+    "JUnit.ConcurrencyBorrowingTests.executor": "Run",
+    "JUnit.ConcurrencyBorrowingTests.testConcurrentBorrowingOnSameCopy.executor": "Run",
+    "JUnit.CopiesTests.executor": "Run",
+    "JUnit.CopyTests.executor": "Run",
+    "JUnit.CopyTests.testCreateCopy.executor": "Run",
+    "JUnit.DeleteReferencedRecordsTests.executor": "Run",
+    "JUnit.LibrarianTests.executor": "Run",
+    "JUnit.NullOrEmptyFieldsTests.executor": "Run",
+    "JUnit.NullOrEmptyFieldsTests.testBorrowingWithNullReturnDateSucceeds.executor": "Run",
+    "JUnit.PublisherTests.executor": "Run",
+    "JUnit.RelationshipTests.executor": "Run",
+    "JUnit.RelationshipTests.testUserBorrowingRelationship.executor": "Run",
+    "JUnit.UserTests.executor": "Run",
+    "JUnit.UserTests.testCreateUser.executor": "Run",
+    "JUnit.UserTests.testDeleteUser.executor": "Run",
+    "JUnit.UserTests.testReadUsers.executor": "Run",
+    "JUnit.ValidationAndEdgeCaseTests.executor": "Run",
+    "JUnit.ValidationTests.executor": "Run",
+    "JUnit.java in LibraryManagementSystem.executor": "Run",
+    "Maven.LibraryManagementSystem [clean,install].executor": "Run",
+    "Maven.LibraryManagementSystem [clean].executor": "Run",
+    "Maven.LibraryManagementSystem [compile].executor": "Run",
+    "Maven.LibraryManagementSystem [install].executor": "Run",
+    "Maven.LibraryManagementSystem [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/marco/Desktop/s30019-TPO04-Books",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "spring",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marco\Documents\LibraryManagementSystem\src\main\resources\META_INF" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn compile" />
+      <command value="mvn install" />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.GUI">
+    <configuration name="GUI" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.gui.LoginForm" />
+      <module name="s30019_project04" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BorrowingBusinessLogicTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="s30019_project04" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BorrowingBusinessLogicTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConcurrencyBorrowingTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="s30019_project04" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ConcurrencyBorrowingTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConcurrencyBorrowingTests.testConcurrentBorrowingOnSameCopy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="s30019_project04" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ConcurrencyBorrowingTests" />
+      <option name="METHOD_NAME" value="testConcurrentBorrowingOnSameCopy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteReferencedRecordsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="s30019_project04" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DeleteReferencedRecordsTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in LibraryManagementSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="s30019_project04" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="s30019_project04" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.GUI" />
+      <item itemvalue="JUnit.BorrowingBusinessLogicTests" />
+      <item itemvalue="JUnit.ConcurrencyBorrowingTests" />
+      <item itemvalue="JUnit.ConcurrencyBorrowingTests.testConcurrentBorrowingOnSameCopy" />
+      <item itemvalue="JUnit.DeleteReferencedRecordsTests" />
+      <item itemvalue="JUnit.java in LibraryManagementSystem" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.java in LibraryManagementSystem" />
+        <item itemvalue="JUnit.BorrowingBusinessLogicTests" />
+        <item itemvalue="JUnit.ConcurrencyBorrowingTests.testConcurrentBorrowingOnSameCopy" />
+        <item itemvalue="JUnit.ConcurrencyBorrowingTests" />
+        <item itemvalue="JUnit.DeleteReferencedRecordsTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,11 +274,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1736877329565</updated>
-      <workItem from="1736877330781" duration="5000" />
+      <workItem from="1736877330781" duration="284000" />
+      <workItem from="1736877650413" duration="20161000" />
+      <workItem from="1737030138138" duration="2629000" />
+      <workItem from="1737032803437" duration="21648000" />
+      <workItem from="1737061419220" duration="20671000" />
+      <workItem from="1737142000371" duration="262000" />
+      <workItem from="1737142276140" duration="11413000" />
+      <workItem from="1737194042333" duration="16602000" />
+      <workItem from="1746540939114" duration="1352000" />
+      <workItem from="1746545019420" duration="591000" />
+      <workItem from="1746700907746" duration="72000" />
+      <workItem from="1746725717172" duration="181000" />
+      <workItem from="1746725987090" duration="987000" />
+      <workItem from="1746779353943" duration="331000" />
+      <workItem from="1746961073758" duration="3000" />
+      <workItem from="1747346619972" duration="641000" />
+      <workItem from="1747651834589" duration="389000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
